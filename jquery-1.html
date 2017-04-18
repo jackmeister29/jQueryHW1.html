@@ -18,13 +18,25 @@
 </script>
 <script>
   function getHeadLine() {
-    var get = $('h1').text();
+    var get = $('h1').text(); //getter
     return get;
   }
   function changeHeadlines() {
-  $('h1').text('New headline');
-  $('h2').text('A Wikipedia article');
+    $('h1').text('New headline'); //setter
+    $('h2').text('A Wikipedia article');
   }
+  function logHeadlines() {
+    var log = $('h1').text();
+    console.log('New headline');
+    var log2 = $('h2').text();
+    console.log('A Wikipedia article');
+  }
+  function swapHeadlines() {
+    var swap1 = $('h1').text();
+    var swap2 = $('h2').text();
 
+    $('h1').text(swap2);
+    $('h2').text(swap1);
+  }
 </script>
 </html>
