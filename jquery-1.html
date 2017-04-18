@@ -46,5 +46,16 @@
     $('h2').show();
     $('h3').show();
   }
+  function highlightByline() {
+    $('h2').addClass('color-yellow');
+  }
+  function unhighlightByline() {
+    $('h2').removeClass('color-yellow');
+  }
 </script>
+<style>
+.color-yellow {
+  background: yellow;
+}
+</style>
 </html>
